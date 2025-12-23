@@ -58,13 +58,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    background-color: transparent;
 }
 
 .picture-box {
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
-    overflow: hidden; /* keeps image inside the octagon */
+    overflow: visible; /* keeps image inside the octagon */
     clip-path: polygon(
         30% 0%, 70% 0%,    /* top-left, top-right */
         100% 30%, 100% 70%,/* right-top, right-bottom */
@@ -83,6 +84,7 @@ main {
     object-fit: cover; /* fills the octagon container */
     display: block;    /* removes inline spacing */
 }
+
 
 .info-box {
     width: 100%;
